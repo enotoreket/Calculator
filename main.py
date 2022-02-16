@@ -3,18 +3,18 @@
 ##d=b^2-4ac
 ##sqrt(d)
 import math
-import Tkinter as tk
+import tkinter as tk
 def click(event):
     try:
-        a = int(entrya.get())
+        a = float(entrya.get())
     except BaseException:
         a=0
     try:
-        b = int(entryb.get())
+        b = float(entryb.get())
     except BaseException:
         b=0
     try:
-        c = int(entryc.get())
+        c = float(entryc.get())
     except BaseException:
         c=0
     d=(b**2)-(4*a*c)
@@ -49,7 +49,6 @@ def click(event):
     label_x2["text"]='x2='+str(x2)
 if __name__=="__main__":
     window=tk.Tk()
-
     frame=tk.Frame(master=window,width=400,height=100)
     frame.pack()
 
